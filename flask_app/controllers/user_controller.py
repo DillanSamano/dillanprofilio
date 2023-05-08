@@ -6,7 +6,7 @@ from flask_app import app
 
 
 
-@app.route('/Dillan_samano/Projects')
+@app.route("/Dillan_samano/Projects")
 def project():
     return render_template("Projects.html")
 
@@ -35,6 +35,6 @@ def recipt():
 
 
 
-@app.route("/Thank_you")
+@app.route("/success")
 def sucess():
     return render_template("success.html")
