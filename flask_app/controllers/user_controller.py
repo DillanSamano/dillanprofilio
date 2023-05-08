@@ -35,6 +35,6 @@ def recipt():
 
 
 
-@app.route("/success")
+@app.route("/Dillan_samano/success")
 def sucess():
     return render_template("success.html")
