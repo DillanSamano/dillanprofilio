@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn instance
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/newprof
+Environment="PATH=/home/ubuntu/newprof/venv/bin"
+ExecStart=/home/ubuntu/newprof/venv/bin/gunicorn --workers 3 --bind unix:{privatewall}.sock -m 007 wsgi:application
+[Install]
+WantedBy=multi-user.target
