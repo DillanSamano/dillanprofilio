@@ -35,6 +35,6 @@ def recipt():
 
 
 
-@app.route("/f")
+@app.route("/Thank_you")
 def sucess():
-    return render_template("f.html")
+    return render_template("success.html")
