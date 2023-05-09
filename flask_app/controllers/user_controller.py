@@ -10,7 +10,7 @@ from flask_app import app
 def project():
     return render_template("Projects.html")
 
-@app.route('/Dillan_samano/About_me')
+@app.route('/About_me')
 def about():
     return render_template("about.html")
 
