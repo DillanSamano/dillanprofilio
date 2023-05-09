@@ -14,7 +14,7 @@ def project():
 def about():
     return render_template("about.html")
 
-@app.route('/Dillan_samano/Contact')
+@app.route('/Contact')
 def contact():
     return render_template("contact.html")
 
