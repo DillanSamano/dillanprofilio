@@ -8,7 +8,7 @@ from flask_app import app
 
 @app.route("/Home")
 def project():
-    return render_template("Projects.html")
+    return render_template("Index.html")
 
 @app.route('/About_me')
 def about():
