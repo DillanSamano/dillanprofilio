@@ -6,7 +6,7 @@ from flask_app import app
 
 
 
-@app.route("/Home")
+@app.route("/home")
 def project():
     return render_template("Projects.html")
 
